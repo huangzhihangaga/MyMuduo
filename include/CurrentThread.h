@@ -7,7 +7,6 @@
 #define MUDUO_CURRENTTHREAD_H
 
 #include <unistd.h>
-#include <unistd.h>
 #include <sys/syscall.h>
 
 /**
