@@ -1,0 +1,97 @@
+# 项目信息
+PROJECT_NAME           = "Muduo Network Library"
+PROJECT_BRIEF          = "基于Reactor模式的高性能C++网络库"
+PROJECT_NUMBER         = "1.0"
+OUTPUT_DIRECTORY       = ./docs
+OUTPUT_LANGUAGE        = Chinese
+
+# 输入配置
+INPUT                  = ./include ./src
+RECURSIVE              = YES
+FILE_PATTERNS          = *.h *.cpp
+
+# 排除目录（编译输出和测试目录）
+EXCLUDE                = ./cmake-build-release-vmu24 \
+                         ./cmake-build-debug \
+                         ./bin \
+                         ./lib \
+                         ./docs
+EXCLUDE_PATTERNS       = */CMakeFiles/* \
+                         */.git/* \
+                         */test/*
+
+# 提取所有内容
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+
+# 源码浏览
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = NO
+STRIP_CODE_COMMENTS    = NO
+VERBATIM_HEADERS       = YES
+REFERENCED_BY_RELATION = YES
+REFERENCES_RELATION    = YES
+
+# 图表（需要 graphviz）
+HAVE_DOT               = YES
+DOT_IMAGE_FORMAT       = png
+CLASS_DIAGRAMS         = YES
+COLLABORATION_GRAPH    = YES
+INCLUDE_GRAPH          = YES
+INCLUDED_BY_GRAPH      = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+GRAPHICAL_HIERARCHY    = YES
+DIRECTORY_GRAPH        = YES
+DOT_CLEANUP            = YES
+UML_LOOK               = NO
+
+# HTML 输出
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+GENERATE_TREEVIEW      = YES
+DISABLE_INDEX          = NO
+SEARCHENGINE           = YES
+HTML_DYNAMIC_MENUS     = YES
+HTML_COLORSTYLE        = AUTO_LIGHT
+
+# 关闭不需要的输出格式
+GENERATE_LATEX         = NO
+GENERATE_RTF           = NO
+GENERATE_MAN           = NO
+GENERATE_XML           = NO
+
+# 文档样式
+JAVADOC_AUTOBRIEF      = YES
+QT_AUTOBRIEF           = NO
+MULTILINE_CPP_IS_BRIEF = NO
+
+# 显示内容
+SHOW_NAMESPACES        = YES
+SHOW_FILES             = YES
+SHOW_GROUPS            = YES
+SHOW_INCLUDE_FILES     = YES
+TOC_INCLUDE_HEADINGS   = 5
+
+# 索引
+ALPHABETICAL_INDEX     = YES
+IGNORE_PREFIX          =
+
+# 预处理器（处理头文件保护宏）
+ENABLE_PREPROCESSING   = YES
+MACRO_EXPANSION        = NO
+SKIP_FUNCTION_MACROS   = YES
+
+# 警告控制
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
+WARN_NO_PARAMDOC       = NO
+WARN_IF_INCOMPLETE_DOC = YES
+WARN_LOGFILE           =
+
+# 其他
+TAB_SIZE               = 4
+CASE_SENSE_NAMES       = YES
